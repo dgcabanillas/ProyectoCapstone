@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        main * {
+            margin: 10px auto;
+        }
+        h1 {
+            margin: 10px auto 0;
+        }
+        h2 {
+            font-size: 24px;
+            margin: 10px auto 0;
+        }
+        h3 {
+            font-size: 22px;
+            margin: 10px auto;
+        }
+        img {
+            width: 150px;
+        }
+        p {
+            margin: 5px auto;
+            text-align: center;
+        }
+        .integrantes * {
+            margin: 5px auto;
+            text-align: center;
+        }
+    </style>
+    <title>GNS3</title>
+</head>
+<body>
+    <aside id="menu-indice"> </aside>
+
+    <main>
+        <h3> Laboratorio Nro 3 </h3>
+        <h1> PROYECTO CAPSTONE </h1>
+        <h2> INTERNETWORKING </h2>
+        <img src="../img/logo-uni.png" alt="logo-uni">
+        <div class="datos-escuela">
+            <p> Prof. Manuel Castillo </p>
+            <p> Administracion de Redes </p>
+            <p> Escuela profesional de ciencias de la computación </p>
+            <p> Facultad de ciencias </p>
+            <p> Universidad Nacional de Ingeniería </p>
+        </div>
+        <div class="integrantes">
+            <h3> Integrantes </h3>
+            <p> Inocente Valle Patrichs Alexander </p>
+            <p> Cabanillas Coaquira Diego Gregory </p>
+            <p> Mini Huambachano Miguel Alessandro </p>
+            <p> Olivieri Romero Stefano </p>
+            <p> Vicente Alva Gabriel </p>
+        </div>
+    </main>
+
+    <script src="../js/datos-indice.js"></script>
+    <script src="../js/helpers.js"></script>
+    <script>
+        generarMenu( menuContent, '#menu-indice', 'ul');
+        document.getElementById("l1-1").classList.add('activo');
+    </script>
+</body>
+</html>

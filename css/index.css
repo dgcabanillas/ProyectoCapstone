@@ -1,0 +1,91 @@
+:root {
+  --color-dark: #3E3E3E;
+  --color-dark-2: #4E4E4E;
+  --color-light: #F5F5F5;
+  --color-light-2: #F0F0F0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html, document {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #menu-indice {
+  width: 300px;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  height: 100%;
+  display: block;
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+body #menu-indice .lista-facultades .item-facultad a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+  text-align: left;
+  line-height: 50px;
+  font-weight: 800;
+  color: var(--color-light);
+  padding-left: 20px;
+}
+
+body #menu-indice .lista-facultades .item-facultad a:hover {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+body #menu-indice .lista-facultades .item-facultad .lista-departamento {
+  display: none;
+}
+
+body #menu-indice .lista-facultades .item-facultad.activo {
+  border-bottom: 2px solid var(--color-light);
+}
+
+body #menu-indice .lista-facultades .item-facultad.activo > a {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+body #menu-indice .lista-facultades .item-facultad.activo .lista-departamento {
+  display: block;
+  padding: 2px;
+}
+
+body #menu-indice .lista-facultades .item-facultad.activo .lista-departamento li {
+  height: 40px;
+}
+
+body #menu-indice .lista-facultades .item-facultad.activo .lista-departamento li a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+body main {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  overflow: scroll;
+}
+/*# sourceMappingURL=index.css.map */
