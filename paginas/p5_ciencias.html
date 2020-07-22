@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>GNS3</title>
+</head>
+<body>
+    <aside id="menu-indice"> </aside>
+
+    <main>
+        <h1 class="title"> Campus Ciencias </h1>
+
+        <br>
+        <h3> Análisis de requisitos </h3>
+        <p> El campus de Ciencias cuenta con 2 facultades que se encuentran en el mismo edificio, por lo que se implementará una LAN. Esta LAN contará con un router general para el campus con salida a la red de la universidad y dos routers internos para la conexión dentro del campus. </p>
+        <p> <b> Cuadro de host's necesarios por departamento dentro de cada facultad </b></p>
+        <table>
+            <tr>
+                <th> ÁREA </th>
+                <th> Nro HOST </th>
+            </tr>
+            <tr>
+                <td> Dpto Biología General </td>
+                <td> 22 </td>
+            </tr>
+            <tr>
+                <td> Dpto Medicina General </td>
+                <td> 20 </td>
+            </tr>
+            <tr>
+                <td> Dpto Bioquímica  </td>
+                <td> 4 </td>
+            </tr>
+            <tr>
+                <td> Dpto Inglés </td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> PAS </td>
+                <td> 30 </td>
+            </tr>
+            <tr>
+                <td> API </td>
+                <td> 31 </td>
+            </tr>
+        </table>
+
+        <br>
+        <h3> Diseño propuesto para la red </h3>
+
+
+    </main>
+
+    <script src="../js/datos-indice.js"></script>
+    <script src="../js/helpers.js"></script>
+    <script>
+        generarMenu( menuContent, '#menu-indice', 'ul');
+        document.getElementById("l1-ciencias").classList.add('activo');
+    </script>
+</body>
+</html>

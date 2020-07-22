@@ -1,0 +1,29 @@
+presentación
+
+Introducción
+LEYENDA
+
+Análisis de Requisitos
+    examinar infraestructura de red actual y protocolos existentes
+    descripción de red lan
+    análisis de los requisitos de red LAN
+    Definición de problemas
+    posibles soluciones
+Diesño
+    diseño
+    definición de los objetivos de la red
+    estructura organizativa de la empresa
+    Diagrama físico y lógico de la red
+    diseño de capa 1, 2, 3
+implementación
+    implementación del diseño
+    Configuración de interconexión de los equipos
+Pruebas 
+    pruebas de conexión
+    análisis de tráfico
+
+Cuaderno Bitácora
+Inconvenientes 
+Problemas
+Implementaciones adicionales
+referencias

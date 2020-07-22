@@ -10,19 +10,34 @@
 <body>
     <aside id="menu-indice"> </aside>
 
+
+
+    
     <main>
-        <h1 class="title"> Visión general de la arquitectura de red </h1>
-        <div class="image">
-            <img src="../img/VISION_GENERAL.png" alt="VISION_GENERAL">
-            <p> Estructura general </p>
-        </div>
+        <h1> INTRODUCCIÓN </h1>
+        <p> El presente documento tiene como objetivo mostrar una posible estructura de red para la interconexión de las facultades Técnicas, Letras y Ciencias de la Universidad Nacional de Ingeniería. </p>
+        <p> Para lo cuál se ha hecho un análisis de la infraestructura de la universidad con el fin de optimizar los costos de los equipos y garantizar la seguridad de la red en general para las distintas facultades. </p>
+
+        <br> <br> <br>
+        <h3> Leyenda </h3>
+        <p> El presente es un documento técnico, por lo cual es necesario conocer los siguientes conceptos. </p>
+        <p> <b>WAN - Wide Area Network:</b> Red a gran escala, normalmente operadas por los proveedores de servicios de internet. También lo utilizan grandes empresas para interconectar suscursales que están en distintos países. ( fibra óptica ) </p>
+        <p> <b>MAN - Metropolitan Area Network:</b> Red a mediana escala, permite para inteconectar redes que se encuentran en distintas ciudades. </p>
+        <p> <b>LAN - Local Area Network:</b> Red a pequeña escala que permite conectar redes en un mismo edificio. </p>
+        <p> <b>Firewall:</b> Software que permite, limita, cifra o decodifica los datos que salen y entran a una red. </p>
+        <p> <b>DHCP - Dynamic Host Configuration Protcol:</b> Software que permite asignar de manera dinámica direcciones de red (IP) a los distintos equipos. </p>
+        <p> <b>SWITCH:</b> Dispositivo que conecta equipos dentro de una red local. </p>
+        <p> <b>ROUTER:</b> Dispositivo que permite el enrutamiento de direcciones IP dentro de una red, por ende también conecta equipos dentro de la red. </p>
     </main>
 
+
+
+    
     <script src="../js/datos-indice.js"></script>
     <script src="../js/helpers.js"></script>
     <script>
         generarMenu( menuContent, '#menu-indice', 'ul');
-        document.getElementById("l1-2").classList.add('activo');
+        document.getElementById("l1-introduccion").classList.add('activo');
     </script>
 </body>
 </html>

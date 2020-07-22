@@ -11,29 +11,12 @@
             flex-direction: column;
         }
         main * {
-            margin: 10px auto;
+            margin: 10px auto !important;
         }
-        h1 {
-            margin: 10px auto 0;
-        }
-        h2 {
-            font-size: 24px;
-            margin: 10px auto 0;
-        }
-        h3 {
-            font-size: 22px;
-            margin: 10px auto;
-        }
-        img {
-            width: 150px;
-        }
-        p {
-            margin: 5px auto;
+        .integrantes *, .datos-escuela * {
+            margin: 5px auto 0 !important;
             text-align: center;
-        }
-        .integrantes * {
-            margin: 5px auto;
-            text-align: center;
+            padding: 0px !important;
         }
     </style>
     <title>GNS3</title>
@@ -41,9 +24,12 @@
 <body>
     <aside id="menu-indice"> </aside>
 
+
+
+
     <main>
         <h3> Laboratorio Nro 3 </h3>
-        <h1> PROYECTO CAPSTONE </h1>
+        <h1 class="title"> PROYECTO CAPSTONE </h1>
         <h2> INTERNETWORKING </h2>
         <img src="../img/logo-uni.png" alt="logo-uni">
         <div class="datos-escuela">
@@ -63,11 +49,14 @@
         </div>
     </main>
 
+
+
+    
     <script src="../js/datos-indice.js"></script>
     <script src="../js/helpers.js"></script>
     <script>
         generarMenu( menuContent, '#menu-indice', 'ul');
-        document.getElementById("l1-1").classList.add('activo');
+        document.getElementById("l1-presentacion").classList.add('activo');
     </script>
 </body>
 </html>

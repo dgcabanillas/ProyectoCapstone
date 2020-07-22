@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>GNS3</title>
+</head>
+<body>
+    <aside id="menu-indice"> </aside>
+
+
+
+
+    <main>
+        <h1> VISION GENERAL DE LA ARQUITECTURA  </h1>
+
+        <br>
+        <h3> ANÁLISIS DE REQUISITOS </h3>
+        <p> La universidad tiene 3 facultades separadas por varios kilómetros, por lo cual se ha establecido que para la interconexión entre ellas se implementará una MAN. Esta MAN constará de un router central que permitirá el tráfico de datos dentro de la red interna, además contará con una DMZ para garantizar la seguridad de la red interna. Dentro de la DMZ estará los servidores de correo, web y DNS ya que estos siempre deberán estar expuestos al tráfico de la red externa. La impelementación de la DMZ implica tener 2 firewall una para el primer filtrado de la DMZ y la segunda para el filtrado de la red interna. Finalmente para la conexión a internet se contará un Router de frontera. </p>
+        
+        <br>
+        <h3> DISEÑO PROPUESTO PARA LA RED </h3>
+        <div class="image">
+            <img src="../img/universidad/red-general.png" alt="red-general">
+            <p> <b>img 1.1: </b> Diseño general de red para la universidad.  </p>
+        </div>
+    </main>
+
+
+
+
+    <script src="../js/datos-indice.js"></script>
+    <script src="../js/helpers.js"></script>
+    <script>
+        generarMenu( menuContent, '#menu-indice', 'ul');
+        document.getElementById("l1-universidad").classList.add('activo');
+    </script>
+</body>
+</html>

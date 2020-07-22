@@ -1,0 +1,39 @@
+PRESETACIÓN
+
+INTRODUCCIÓN
+    El presente documento tiene como objetivo mostrar una posible estructura de red para la interconexión de las facultades Técnicas, Letras y Ciencias de la Universidad Nacional de Ingeniería.
+    Para lo cuál se ha hecho un análisis de la infraestructura de la universidad con el fin de optimizar los costos de los equipos y garantizar la seguridad de la red en general para las distintas facultades.
+
+LEYENDA
+    El presente es un documento técnico, por lo cual es necesario conocer los siguientes conceptos.
+    WAN - Wide Area Network : Red a gran escala, normalmente operadas por los proveedores de servicios de internet. También lo utilizan grandes empresas para interconectar suscursales que están en distintos países. ( fibra óptica )
+    MAN - Metropolitan Area Network: Red a mediana escala, permite para inteconectar redes que se encuentran en distintas ciudades.
+    LAN - Local Area Network: Red a pequeña escala que permite conectar redes en un mismo edificio.
+    Firewall: Software que permite, limita, cifra o decodifica los datos que salen y entran a una red.
+    DHCP - Dynamic Host Configuration Protcol: Software que permite asignar de manera dinámica direcciones de red (IP) a los distintos equipos.
+    SWITCH: Dispositivo que conecta equipos dentro de una red local.
+    ROUTER: Dispositivo que permite el enrutamiento de direcciones IP dentro de una red, por ende también conecta equipos dentro de la red.
+
+ANÁLISIS DE REQUISITOS
+    La universidad tiene 3 facultades separadas por varios kilómetros, por lo cual se ha establecido que para la interconexión entre ellas se implementará una MAN. Esta MAN constará de un router central que permitirá el tráfico de datos dentro de la red interna, además contará con una DMZ para garantizar la seguridad de la red interna. Dentro de la DMZ estará los servidores de correo, web y DNS ya que estos siempre deberán estar expuestos al tráfico de la red externa. La impelementación de la DMZ implica tener 2 firewall una para el primer filtrado de la DMZ y la segunda para el filtrado de la red interna. Finalmente para la conexión a internet se contará un Router de frontera.
+    Para cada una de las facultades se implementará una LAN.
+    Campus de Técnicas:
+    Campus de Letras:
+    Campus de ciencias:
+        Consta de las facultades de Medicina y Biología. 
+        Se requiere tener la siguiente estructura para los departamentos dentro de la facultad:
+            Dpto Biología General   22 host
+            Dpto Medicina General   20 host
+            Dpto Bioquímica         4 host
+            Dpto Inglés             3 host
+            PAS                     30 host
+            API                     31 host
+        
+
+DISEÑO DE LA RED
+
+IMPLEMENTACIÓN
+
+
+VLAN es de nivel de 2 y se configura en el SWITCH ( da prioridad al tráfico ), crea en el switch 
+SUBnet es de nivel 3 se configura en el router

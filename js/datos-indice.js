@@ -1,19 +1,24 @@
 const menuContent = [ 
     {   class: 'lista-facultades' },
     {
-        id: 'l1-1',
+        id: 'l1-presentacion',
         class: 'item-facultad',
         a: { content: 'PRESENTACIÓN', link: './index.html' },
     },
     {
-        id: 'l1-2',
+        id: 'l1-introduccion',
         class: 'item-facultad',
         a: { content: 'INTRODUCCIÓN', link: './p1_introduccion.html' }
     },
     {
-        id: 'l1-3',
+        id: 'l1-universidad',
         class: 'item-facultad',
-        a: { content: 'CAMPUS TÉCNICAS', link: './p2_tecnicas.html' },
+        a: { content: 'UNIVERSIDAD', link: './p2_universidad.html' },
+    },
+    {
+        id: 'l1-tecnicas',
+        class: 'item-facultad',
+        a: { content: 'CAMPUS TÉCNICAS', link: './p3_tecnicas.html' },
         ul: [
             { class: 'lista-departamento' },
             { id: 'l2-1', a: { content: 'Facultad de Informática', link: '#informatica' } },
@@ -22,9 +27,9 @@ const menuContent = [
         ]
     },
     {
-        id: 'l1-4',
+        id: 'l1-letras',
         class: 'item-facultad',
-        a: { content: 'CAMPUS LETRAS', link: './p3_letras.html' },
+        a: { content: 'CAMPUS LETRAS', link: './p4_letras.html' },
         ul: [
             { class: 'lista-departamento' },
             { id: 'l3-1', a: { content: 'Facultad de Derecho',   link: '#derecho' } },
@@ -34,9 +39,9 @@ const menuContent = [
         ]
     },
     {
-        id: 'l1-5',
+        id: 'l1-ciencias',
         class: 'item-facultad',
-        a: { content: 'CAMPUS CIENCIAS', link: './p4_ciencias.html' },
+        a: { content: 'CAMPUS CIENCIAS', link: './p5_ciencias.html' },
         ul: [
             { class: 'lista-departamento' },
             { id: 'l4-1', a: { content: 'Facultad de Medicina', link: '#medicina' } }
