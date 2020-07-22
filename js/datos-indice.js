@@ -16,9 +16,9 @@ const menuContent = [
         a: { content: 'CAMPUS TÉCNICAS', link: './p2_tecnicas.html' },
         ul: [
             { class: 'lista-departamento' },
-            { id: 'l2-1', a: { content: 'Facultad de Informática', link: '#' } },
-            { id: 'l2-2', a: { content: 'Facultad de Ingeniería',  link: '#' } },
-            { id: 'l2-3', a: { content: 'Facultad de Matemáticas', link: '#' } }
+            { id: 'l2-1', a: { content: 'Facultad de Informática', link: '#informatica' } },
+            { id: 'l2-2', a: { content: 'Facultad de Ingeniería',  link: '#ingenieria' } },
+            { id: 'l2-3', a: { content: 'Facultad de Matemáticas', link: '#matematica' } }
         ]
     },
     {
@@ -27,10 +27,10 @@ const menuContent = [
         a: { content: 'CAMPUS LETRAS', link: './p3_letras.html' },
         ul: [
             { class: 'lista-departamento' },
-            { id: 'l3-1', a: { content: 'Facultad de Derecho',   link: '#' } },
-            { id: 'l3-2', a: { content: 'Facultad de Filología', link: '#' } },
-            { id: 'l3-3', a: { content: 'Servicios Generales',   link: '#' } },
-            { id: 'l3-4', a: { content: 'Servicio Informática',  link: '#' } }
+            { id: 'l3-1', a: { content: 'Facultad de Derecho',   link: '#derecho' } },
+            { id: 'l3-2', a: { content: 'Facultad de Filología', link: '#filologia' } },
+            { id: 'l3-3', a: { content: 'Servicios Generales',   link: '#servicios-generales' } },
+            { id: 'l3-4', a: { content: 'Servicio Informática',  link: '#servicios-informatica' } }
         ]
     },
     {
@@ -39,7 +39,7 @@ const menuContent = [
         a: { content: 'CAMPUS CIENCIAS', link: './p4_ciencias.html' },
         ul: [
             { class: 'lista-departamento' },
-            { id: 'l4-1', a: { content: 'Facultad de Medicina', link: '#' } }
+            { id: 'l4-1', a: { content: 'Facultad de Medicina', link: '#medicina' } }
         ]
     }
 ]
