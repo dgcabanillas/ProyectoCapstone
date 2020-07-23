@@ -46,5 +46,18 @@ const menuContent = [
             { class: 'lista-departamento' },
             { id: 'l4-1', a: { content: 'Facultad de Medicina', link: '#medicina' } }
         ]
+    },
+    {
+        id: 'l1-bitacora',
+        class: 'item-facultad',
+        a: { content: 'BITÁCORA', link: './p6_bitacora.html' },
+        ul: [
+            { class: 'lista-departamento' },
+            { id: 'l5-1', a: { content: 'Inocente Patrichs', link: '#patrichs' } },
+            { id: 'l5-2', a: { content: 'Cabanillas Diego', link: '#diego' } },
+            { id: 'l5-3', a: { content: 'Mini Miguel', link: '#miguel' } },
+            { id: 'l5-4', a: { content: 'Olivieri Stefano', link: '#stefano' } },
+            { id: 'l5-5', a: { content: 'Vicente Gabriel', link: '#gabriel' } }
+        ]
     }
 ]

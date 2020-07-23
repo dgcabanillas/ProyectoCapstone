@@ -32,3 +32,17 @@ function generarMenu( object, nodo, item, page = 'any' ) {
         if( object.ul ) generarMenu( object.ul, nodo + ' ' + item, 'ul');
     }
 }
+
+function ocultarImg() {
+    document.querySelector( "#img-pop-up" ).className = "hide";
+}
+
+document.addEventListener('click', function(e) {
+    var el = e.target.getAttribute("can-clicked");
+    if( el ) {
+        console.log( e.target.getAttribute("src") );
+        document.querySelector( "#img-pop-up img" ).src =  e.target.getAttribute("src");
+        document.querySelector( "#img-pop-up img" ).alt =  e.target.getAttribute("alt");
+        document.querySelector( "#img-pop-up" ).className = "activo"
+    }
+}, false);

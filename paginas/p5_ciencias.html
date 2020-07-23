@@ -9,6 +9,15 @@
 </head>
 <body>
     <aside id="menu-indice"> </aside>
+    <div id="img-pop-up" class="hide">
+        <div class="img-container">
+            <img src="../img/ciencias/FC_R1_DHCP.png" alt="">
+        </div>
+        <button onclick={ocultarImg()}> X </button>
+    </div>
+
+
+
 
     <main>
         <h1 class="title"> Campus Ciencias </h1>
@@ -59,7 +68,7 @@
                 El switch FC_SW sirve como switch de distribución para las VLAN. Esto se logra con el protocolo dot1q, es decir, tiene puertos que sirven de troncal para conectar los switch de las VLAN con el router principal.
             </p>
             <div class="image">
-                <img src="../img/ciencias/estructura_red.png" alt="red-general">
+                <img src="../img/ciencias/estructura_red.png" alt="red-general" can-clicked = "true">
                 <p> <b>img 5.1: </b> Estructura de red para el campus de ciencias.  </p>
             </div>
         </section>
@@ -144,39 +153,42 @@
             <br>
             <p> <b> Configuración del switch de distribución/acceso FC_SW </b> </p>
             <div class="image">
-                <img src="../img/ciencias/FC_SW_1.png" alt="red-general">
+                <img src="../img/ciencias/FC_SW_1.png" alt="red-general" can-clicked = "true">
                 <p> <b>img 5.2: </b> Configuración FC_SW.  </p>
             </div>
 
             <br>
             <p> <b> Configuración del switch de acceso SW1 </b> </p>
             <div class="image">
-                <img src="../img/ciencias/SW1_1.png" alt="red-general">
+                <img src="../img/ciencias/SW1_1.png" alt="red-general" can-clicked = "true">
                 <p> <b>img 5.3: </b> Configuración SW1.  </p>
             </div>
 
             <br>
             <p> <b> Configuración del servicio DHCP en el router FC_R1 </b> </p>
             <div class="image">
-                <img src="../img/ciencias/FC_R1_DHCP.png" alt="red-general">
+                <img src="../img/ciencias/FC_R1_DHCP.png" alt="red-general" can-clicked = "true">
                 <p> <b>img 5.4: </b> Configuración DHCP - FC_R1.  </p>
             </div>
 
             <br>
             <p> <b> Comprobación asignación dinámica de IP's </b> </p>
             <div class="image">
-                <img src="../img/ciencias/DHCP_comprobacion.png" alt="red-general">
+                <img src="../img/ciencias/DHCP_comprobacion.png" alt="red-general" can-clicked = "true">
                 <p> <b>img 5.5: </b> Asignación IP dinámica  </p>
             </div>
 
             <br>
             <p> <b> Comprobación transmisión de paquetes entre 2 VLAN </b> </p>
             <div class="image">
-                <img src="../img/ciencias/PING_100_103_1.png" alt="red-general">
+                <img src="../img/ciencias/PING_100_103_1.png" alt="red-general" can-clicked = "true">
                 <p> <b>img 5.6: </b> Transmisión de paquetes VLAN 100 - 103  </p>
             </div>
         </section>
     </main>
+
+
+
 
     <script src="../js/datos-indice.js"></script>
     <script src="../js/helpers.js"></script>

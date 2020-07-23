@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>GNS3</title>
+</head>
+<body>
+    <aside id="menu-indice"> </aside>
+
+
+
+    <main>
+        <h1> BITÁCORA</h1>
+        <p>
+            A continuación se listará los aportes que tuvo cada uno de los integrantes con respecto al desarrllo del proyecto
+        </p>
+
+        <section id="patrichs">
+            <h4> Inocente Patrichs </h4>
+        </section>
+
+        <section id="diego">
+            <h4> Cabanillas Diego </h4>
+            <ul>
+                <li> Diseño de la DMZ </li>
+                <li> Análisis de requerimientos para el Campus de Ciencias </li>
+                <li> Propuestas para el diseño de red del Campus de Ciencias </li>
+                <li> Implementación de las propuestas </li>
+                <li> Implementación de las VLAN en el Campus de Ciencias </li>
+                <li> Implementación del servicio DHCP en el router principal del Campus de Ciencias </li>
+                <li> Propuestas de mejoras para la interconectividad entre campus </li>
+                <li> Elaboración de las páginas en html </li>
+            </ul>
+        </section>
+
+        <section id="miguel">
+            <h4> Mini Miguel </h4>
+        </section>
+
+        <section id="stefano">
+            <h4> Olivieri Stefano </h4>
+        </section>
+
+        <section id="gabriel">
+            <h4> Vicente Gabriel </h4>
+        </section>
+    </main>
+
+
+    
+
+    <script src="../js/datos-indice.js"></script>
+    <script src="../js/helpers.js"></script>
+    <script>
+        generarMenu( menuContent, '#menu-indice', 'ul');
+        document.getElementById("l1-bitacora").classList.add('activo');
+    </script>
+</body>
+</html>
