@@ -10,7 +10,9 @@
 <body>
     <aside id="menu-indice"> </aside>
     <div id="img-pop-up" class="hide">
-        <img src="../img/ciencias/FC_R1_DHCP.png" alt="">
+        <div class="img-container">
+            <img src="../img/ciencias/FC_R1_DHCP.png" alt="">
+        </div>
         <button onclick={ocultarImg()}> X </button>
     </div>
 
@@ -27,9 +29,12 @@
         <br>
         <h3> DISEÑO PROPUESTO PARA LA RED </h3>
         <div class="image">
-            <img src="../img/universidad/red-general.png" alt="red-general">
+            <img src="../img/universidad/red-general.png" alt="red-general" can-clicked="true">
             <p> <b>img 1.1: </b> Diseño general de red para la universidad.  </p>
         </div>
+        <p>
+            Para la red interna, los campus estarán coectados por un router central.
+        </p>
     </main>
 
 

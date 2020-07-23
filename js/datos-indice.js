@@ -41,11 +41,12 @@ const menuContent = [
     {
         id: 'l1-ciencias',
         class: 'item-facultad',
-        a: { content: 'CAMPUS CIENCIAS', link: './p5_ciencias.html' },
-        ul: [
-            { class: 'lista-departamento' },
-            { id: 'l4-1', a: { content: 'Facultad de Medicina', link: '#medicina' } }
-        ]
+        a: { content: 'CAMPUS CIENCIAS', link: './p5_ciencias.html' }
+    },
+    {
+        id: 'l1-auditoria',
+        class: 'item-facultad',
+        a: { content: 'AUDITORÍA', link: './auditoria.html' }
     },
     {
         id: 'l1-bitacora',

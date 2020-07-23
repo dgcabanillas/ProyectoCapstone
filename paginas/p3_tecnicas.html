@@ -10,7 +10,9 @@
 <body>
     <aside id="menu-indice"> </aside>
     <div id="img-pop-up" class="hide">
-        <img src="../img/ciencias/FC_R1_DHCP.png" alt="">
+        <div class="img-container">
+            <img src="../img/ciencias/FC_R1_DHCP.png" alt="">
+        </div>
         <button onclick={ocultarImg()}> X </button>
     </div>
 
@@ -18,7 +20,31 @@
 
 
     <main>
-        <h1 class="title"> Estructura de red Campus Técnicas </h1>
+        <h3> Análisis de requisitos </h3>
+        <p> 
+            En base al cuadro que se muestra, se ha implementado un diseño de red que se explicará con mayor detalle en el siguiente punto. 
+        </p>
+        <table>
+            <tr>	<th>FACULTAD</th>	<th>DEPARTAMENTO/ENTIDAD</th>	<th>NºSwittch</th>	<th>N° NODOS</th>	<th>Nº Servidores</th>	<th>#Hosts</th>	</tr>
+            <tr>	<td>INFORMÁTICA</td>	<td>API SIN INTERNET</td>	<td>1</td>	<td>31</td>	<td>0</td>	<td>62</td>	</tr>
+            <tr>	<td>INFORMÁTICA</td>	<td>API CON INTERNET</td>	<td>1</td>	<td>31</td>	<td>0</td>	<td>62</td>	</tr>
+            <tr>	<td>INFORMÁTICA</td>	<td>PAS</td>	<td>1</td>	<td>19</td>	<td>0</td>	<td>30</td>	</tr>
+            <tr>	<td>INFORMÁTICA</td>	<td>REDES Y SISTEMA</td>	<td>1</td>	<td>8</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>INFORMÁTICA</td>	<td>INGENIERIA DEL SOFTWARE</td>	<td>1</td>	<td>6</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>INFORMÁTICA</td>	<td>ROBÓTICA</td>	<td>1</td>	<td>3</td>	<td>0</td>	<td>6</td>	</tr>
+            <tr>	<td></td>	<td>Estadistica</td>	<td>0</td>	<td>1</td>	<td>0</td>	<td>6</td>	</tr>
+            <tr>	<td>INGENIERÍA</td>	<td>FÍSICA</td>	<td>1</td>	<td>6</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>INGENIERÍA</td>	<td>MECÁNICA</td>	<td>1</td>	<td>8</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>INGENIERÍA</td>	<td>ELECTRÓNICA</td>	<td>1</td>	<td>6</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>INGENIERÍA</td>	<td>PAS</td>	<td>1</td>	<td>6</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>MATEMÁTICAS</td>	<td>ALGEBRA</td>	<td>1</td>	<td>7</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>MATEMÁTICAS</td>	<td>ESTADÍSTICA</td>	<td>1</td>	<td>5</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>MATEMÁTICAS</td>	<td>INGLÉS</td>	<td>1</td>	<td>3</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>MATEMÁTICAS</td>	<td>PAS</td>	<td>1</td>	<td>6</td>	<td>0</td>	<td>14</td>	</tr>
+            <tr>	<td>MATEMÁTICAS</td>	<td>SERVIDORES</td>	<td>1</td>	<td>2</td>	<td>2</td>	<td>6</td>	</tr>
+        </table>
+
+        <h3 class="title"> Estructura de red Campus Técnicas </h3>
         <div class="image">
             <img src="../img/TECNICAS.png" alt="TECNICAS">
             <p> Campus Técnicas </p>
@@ -44,6 +70,305 @@
                 <p> Campus Técnicas - F. Matemática </p>
             </div>
         </section>
+
+        <h3> Implementación </h3>
+        <p>
+            Para la red del Campus de Técnicas se han definido las siguientes rutas para la interconexión entre las distintas facultades y el campus de la universidad.
+        </p>
+        <table>
+            <tr>
+                <th>FACULTAD</th>	
+                <th>DEPARTAMENTO/ENTIDAD</th>	
+                <th>IP RANGO</th>	
+                <th>N° NODOS</th>	
+                <th>Prefijo de Mascara</th>	
+                <th>Máscara</th>	
+                <th>#Hosts</th>	
+                <th>Red</th>	
+                <th>Gateway/Router</th>	
+                <th>Primera_Utilizable</th>	
+                <th>Ultima_Utilizable</th>	
+                <th>Broadcast</th>	
+                <th>VLAN</th>
+            </tr>
+            <tr>
+                <td>INFORMÁTICA</td>
+                <td>API SIN INTERNET</td>
+                <td>10.7.15.0/24</td>
+                <td>31</td>
+                <td>26</td>
+                <td>255.255.255.192</td>
+                <td>62</td>
+                <td>10.7.15.0</td>
+                <td>10.7.15.1</td>
+                <td>10.7.15.2</td>
+                <td>10.7.15.62</td>
+                <td>10.7.15.63</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>INFORMÁTICA</td>
+                <td>API CON INTERNET</td>
+                <td>10.7.15.0/24</td>
+                <td>31</td>
+                <td>26</td>
+                <td>255.255.255.192</td>
+                <td>62</td>
+                <td>10.7.15.64</td>
+                <td>10.7.15.65</td>
+                <td>10.7.15.66</td>
+                <td>10.7.15.126</td>
+                <td>10.7.15.127</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>INFORMÁTICA</td>
+                <td>PAS</td>
+                <td>10.7.15.0/24</td>
+                <td>19</td>
+                <td>27</td>
+                <td>255.255.255.224</td>
+                <td>30</td>
+                <td>10.7.15.128</td>
+                <td>10.7.15.129</td>
+                <td>10.7.15.130</td>
+                <td>10.7.15.158</td>
+                <td>10.7.15.159</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>INFORMÁTICA</td>
+                <td>REDES Y SISTEMA</td>
+                <td>10.7.15.0/24</td>
+                <td>8</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.15.160</td>
+                <td>10.7.15.161</td>
+                <td>10.7.15.162</td>
+                <td>10.7.15.174</td>
+                <td>10.7.15.175</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td>INFORMÁTICA</td>
+                <td>INGENIERIA DEL SOFTWARE</td>
+                <td>10.7.15.0/24</td>
+                <td>6</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.15.176</td>
+                <td>10.7.15.177</td>
+                <td>10.7.15.178</td>
+                <td>10.7.15.206</td>
+                <td>10.7.15.207</td>
+                <td>104</td>
+            </tr>
+            <tr>
+                <td>INFORMÁTICA</td>
+                <td>ROBÓTICA</td>
+                <td>10.7.15.0/24</td>
+                <td>3</td>
+                <td>29</td>
+                <td>255.255.255.248</td>
+                <td>6</td>
+                <td>10.7.15.208</td>
+                <td>10.7.15.209</td>
+                <td>10.7.15.210</td>
+                <td>10.7.15.214</td>
+                <td>10.7.15.215</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Estadistica</td>
+                <td>10.7.15.0/24</td>
+                <td>1</td>
+                <td>29</td>
+                <td>255.255.255.248</td>
+                <td>6</td>
+                <td>10.7.15.216</td>
+                <td>10.7.15.217</td>
+                <td>10.7.15.218</td>
+                <td>10.7.15.222</td>
+                <td>10.7.15.223</td>
+                <td>106</td>
+            </tr>
+            <tr>                                        
+                <td>INGENIERÍA</td>
+                <td>FÍSICA</td>
+                <td>10.7.16.0/24</td>
+                <td>6</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.16.0</td>
+                <td>10.7.16.1</td>
+                <td>10.7.16.2</td>
+                <td>10.7.16.14</td>
+                <td>10.7.16.15</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>INGENIERÍA</td>
+                <td>MECÁNICA</td>
+                <td>10.7.16.0/24</td>
+                <td>8</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.16.16</td>
+                <td>10.7.16.17</td>
+                <td>10.7.16.18</td>
+                <td>10.7.16.30</td>
+                <td>10.7.16.31</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>INGENIERÍA</td>
+                <td>ELECTRÓNICA</td>
+                <td>10.7.16.0/24</td>
+                <td>6</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.16.32</td>
+                <td>10.7.16.33</td>
+                <td>10.7.16.34</td>
+                <td>10.7.16.46</td>
+                <td>10.7.16.47</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>INGENIERÍA</td>
+                <td>PAS</td>
+                <td>10.7.16.0/24</td>
+                <td>6</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.16.48</td>
+                <td>10.7.16.49</td>
+                <td>10.7.16.50</td>
+                <td>10.7.16.62</td>
+                <td>10.7.16.63</td>
+                <td>103</td>
+            </tr>
+            <tr>                                      
+                <td>MATEMÁTICAS</td>
+                <td>ALGEBRA</td>
+                <td>10.7.17.0/24</td>
+                <td>7</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.17.0</td>
+                <td>10.7.17.1</td>
+                <td>10.7.17.2</td>
+                <td>10.7.17.14</td>
+                <td>10.7.17.15</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>MATEMÁTICAS</td>
+                <td>ESTADÍSTICA</td>
+                <td>10.7.17.0/24</td>
+                <td>5</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.17.16</td>
+                <td>10.7.17.17</td>
+                <td>10.7.17.18</td>
+                <td>10.7.17.30</td>
+                <td>10.7.17.31</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>MATEMÁTICAS</td>
+                <td>INGLÉS</td>
+                <td>10.7.17.0/24</td>
+                <td>3</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.17.32</td>
+                <td>10.7.17.33</td>
+                <td>10.7.17.34</td>
+                <td>10.7.17.46</td>
+                <td>10.7.17.47</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>MATEMÁTICAS</td>
+                <td>PAS</td>
+                <td>10.7.17.0/24</td>
+                <td>6</td>
+                <td>28</td>
+                <td>255.255.255.240</td>
+                <td>14</td>
+                <td>10.7.17.48</td>
+                <td>10.7.17.49</td>
+                <td>10.7.17.50</td>
+                <td>10.7.17.62</td>
+                <td>10.7.17.63</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td>MATEMÁTICAS</td>
+                <td>SERVIDORES</td>
+                <td>10.7.17.0/24</td>
+                <td>2</td>
+                <td>29</td>
+                <td>255.255.255.248</td>
+                <td>6</td>
+                <td>10.7.17.64</td>
+                <td>10.7.17.65</td>
+                <td>10.7.17.66</td>
+                <td>10.7.17.70</td>
+                <td>10.7.17.71</td>
+                <td>104</td>
+            </tr>
+        </table>
+
+        <div class="image">
+            <img src="../img/tecnicas/ss1.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss2.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss3.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss4.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss5.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss6.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss7.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss8.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss9.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss10.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss11.png" alt="TECNICAS">
+        </div>
+        <div class="image">
+            <img src="../img/tecnicas/ss12.png" alt="TECNICAS">
+        </div>
     </main>
 
     <script src="../js/datos-indice.js"></script>
