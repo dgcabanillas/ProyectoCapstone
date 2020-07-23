@@ -27,3 +27,12 @@ Inconvenientes
 Problemas
 Implementaciones adicionales
 referencias
+
+
+5
+255.255.255.224
+11111
+16 + 8 + 4 + 2 + 1
+192.168.10.0  -> 0 1 |   | 31
+
+111111000 + 111 = 255 - 7 = 248
