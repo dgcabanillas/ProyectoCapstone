@@ -22,6 +22,11 @@
 
     <main>
         <h1 class="title"> Estructura de red Campus de Letras </h1>
+
+        <p>
+            El campus de letras poseera dos facultades, una  oficina administrativa y finalmente el servicio de informatica el cual estara conectado al resto de facultades brinando los servicios correspondientes, ya que esta facultad es la unica poseedora de este servicio. 
+        </p>
+
         <div class="image">
             <a href="../img/CAMPUS_LETRAS.png">
                 <img src="../img/CAMPUS_LETRAS.png" alt="CAMPUS_LETRAS" >
@@ -31,6 +36,9 @@
 
         <section id="derecho">
             <h2 class="subtitle"> Facultad de Derecho - Estructura </h2>
+            <p>
+                la facultad de derecho presenta los respectivos departamentos academicos lo cuales son derecho civil, penal y privado a su vez presentara una API y un PAS los cuales estaran enrutados para la comunicacion entre maquinas o equipos del mismo tipo.
+            </p>
             <div class="image">
                 <a href="../img/DERECHO.png">
                     <img src="../img/DERECHO.png" alt="DERECHO">
@@ -43,6 +51,9 @@
 
         <section id="filologia">
             <h2 class="subtitle"> Facultad de Filología - Estructura </h2>
+            <p>
+                En la facultad de filologia vemos una estructura parecida 3 departamentos filologia inglesa, filologia hispanica y francesa y literatura las cuales estaran acompañadas de un PAS el cual esta conectado con sus congeneres de otras facultades
+            </p>
             <div class="image">
                 <a href="../img/FILOLOGIA.png">
                     <img src="../img/FILOLOGIA.png" alt="FILOLOGIA">
@@ -55,6 +66,9 @@
 
         <section id="servicios-generales">
             <h2 class="subtitle"> Servicios Generales - Estructura </h2>
+            <p>
+                Esta es la seccion de servicios que incluye servicios a alumnos como psicologia biblioteca gestion academica y el rectorado esta a su vez usa el enrutamiento para conectarse debido a su necesidad de poseer las notas de sus alumnos. 
+            </p>
             <div class="image">
                 <a href="../img/SERVICIOS_GENERALES.png">
                     <img src="../img/SERVICIOS_GENERALES.png" alt="SERV_GENERAL">
@@ -67,6 +81,9 @@
 
         <section id="servicios-informatica">
             <h2 class="subtitle"> Servicios Informática - Estructura </h2>
+            <p>
+                La seccion que une al todas las facultades y la que les brinda servicios, para este proposito se usa un enrutamiento general desde este puerto hacia todos los campus este manejara el ingreso a internet se conectara a otros gns3 a travez de un udp tunnel los servicios constan de mantenimiento y redes.
+            </p>
             <div class="image">
                 <a href="../img/SERVICIO_INFORMATICA.png">
                     <img src="../img/SERVICIO_INFORMATICA.png" alt="INFOR">
@@ -80,11 +97,17 @@
 
         <h3> Configuración de enrutamiento </h3>
         <div class="image">
+            <p>
+                Aqui vemos el enrutamiento dado desde el router de informatica a todo la facultad de ciencias
+            </p>
             <a href="../img/letras/enrutamiento_1.jpeg">
                 <img src="../img/letras/enrutamiento_1.jpeg" alt="CAMPUS_LETRAS" >
             </a>
         </div>
         <div class="image">
+            <p>
+                en esta imagen se encuentra el direccionamiento a la facultad de tecnicas
+            </p>
             <a href="../img/letras/enrutamiento_2.jpeg">
                 <img src="../img/letras/enrutamiento_2.jpeg" alt="CAMPUS_LETRAS" >
             </a>
@@ -176,12 +199,22 @@
 
         <h3> Servicio SSH </h3>
         <div class="image">
+            <p> Permitiendo el acceso con SSH solo a la red 100.3.1.0/24 usando hosts.deny y hosts.allow. </p>
+            <a href="../img/letras/ssh_3.jpeg">
+                <img src="../img/letras/ssh_3.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+            <p> Test del acceso SSH - parte 3 </p>
+        </div>
+        <div class="image">
+            <p> Restringimos el servicio SSH con <b> iptables </b> para que sólo la red 100.3.1.0/24 tenga acceso remoto </p>
+            <p> Esto con el fin de permitir el acceso remoto sólo al persoal del servicio de informática. </p>
             <a href="../img/letras/ssh_1.jpeg">
                 <img src="../img/letras/ssh_1.jpeg" alt="CAMPUS_LETRAS" >
             </a>
             <p> Test del acceso SSH - parte 1 </p>
         </div>
         <div class="image">
+            <p> Nos conectamos con el comando SSH al host 100.1.1.66/24 </p>
             <a href="../img/letras/ssh_2.jpeg">
                 <img src="../img/letras/ssh_2.jpeg" alt="CAMPUS_LETRAS" >
             </a>
