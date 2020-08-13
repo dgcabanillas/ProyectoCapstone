@@ -124,15 +124,20 @@ body main p {
   line-height: 20px;
 }
 
-body main table {
-  margin-left: 40px;
+body main .table-container {
+  padding-left: 20px;
+  overflow: auto;
 }
 
-body main table th, body main table td {
+body main .table-container table {
+  margin: 0;
+}
+
+body main .table-container table th, body main .table-container table td {
   padding: 5px 10px;
 }
 
-body main table, body main th, body main td {
+body main .table-container table, body main .table-container th, body main .table-container td {
   border: 1px solid black;
   border-collapse: collapse;
   font-size: 14px;
@@ -151,13 +156,18 @@ body main .image {
   padding-left: 20px;
 }
 
+body main .image a {
+  margin-bottom: 0;
+}
+
 body main .image img {
   width: 100%;
   border: 2px solid black;
+  margin: 0;
 }
 
 body main .image p {
-  margin: 10px auto;
+  margin: 0 auto 10px;
 }
 
 body main section {

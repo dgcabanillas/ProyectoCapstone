@@ -23,36 +23,38 @@
             <h3> Análisis de requisitos </h3>
             <p> El campus de Ciencias cuenta con 2 facultades que se encuentran en el mismo edificio, por lo que se implementará una LAN. Esta LAN contará con un router general para el campus con salida a la red de la universidad y dos routers internos para la conexión dentro del campus. </p>
             <p> <b> Cuadro de host's necesarios por departamento dentro de cada facultad </b></p>
-            <table>
-                <tr>
-                    <th> ÁREA </th>
-                    <th> Nro HOST </th>
-                </tr>
-                <tr>
-                    <td> Dpto Biología General </td>
-                    <td> 22 </td>
-                </tr>
-                <tr>
-                    <td> Dpto Medicina General </td>
-                    <td> 20 </td>
-                </tr>
-                <tr>
-                    <td> Dpto Bioquímica  </td>
-                    <td> 4 </td>
-                </tr>
-                <tr>
-                    <td> Dpto Inglés </td>
-                    <td> 3 </td>
-                </tr>
-                <tr>
-                    <td> PAS </td>
-                    <td> 30 </td>
-                </tr>
-                <tr>
-                    <td> API </td>
-                    <td> 31 </td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th> ÁREA </th>
+                        <th> Nro HOST </th>
+                    </tr>
+                    <tr>
+                        <td> Dpto Biología General </td>
+                        <td> 22 </td>
+                    </tr>
+                    <tr>
+                        <td> Dpto Medicina General </td>
+                        <td> 20 </td>
+                    </tr>
+                    <tr>
+                        <td> Dpto Bioquímica  </td>
+                        <td> 4 </td>
+                    </tr>
+                    <tr>
+                        <td> Dpto Inglés </td>
+                        <td> 3 </td>
+                    </tr>
+                    <tr>
+                        <td> PAS </td>
+                        <td> 30 </td>
+                    </tr>
+                    <tr>
+                        <td> API </td>
+                        <td> 31 </td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
         <section>
@@ -74,74 +76,76 @@
 
         <section>
             <h3> Tabla de direcciones de red </h3>
-            <table>
-                <tr>
-                    <th> ÁREA </th>
-                    <th> VLAN </th>
-                    <th> RED </th>
-                    <th> MÁSCARA </th>
-                    <th> GATEWAY </th>
-                    <th> PRIMERA IP UTILIZABLE </th>
-                    <th> ÚLTIMA IP UTILIZABLE </th>
-                    <th> HOSTS </th>
-                    <th> FÓRMULA </th>
-                </tr>
-                <tr>
-                    <td> Dep. Biología G.|Bioquímica </td>
-                    <td> 100 </td>
-                    <td> 192.168.137.0 </td>
-                    <td> 255.255.255.224  </td>
-                    <td> 192.168.137.1 </td>
-                    <td> 192.168.137.2 </td>
-                    <td> 192.168.137.30 </td>
-                    <td> 22|4 </td>
-                    <td> (22+4+3) >= 2^n => n=5 </td>
-                </tr>
-                <tr>
-                    <td> Dep. Medicina G. </td>
-                    <td> 101 </td>
-                    <td> 192.168.137.32 </td>
-                    <td> 255.255.255.224  </td>
-                    <td> 192.168.137.33 </td>
-                    <td> 192.168.137.34 </td>
-                    <td> 192.168.137.62 </td>
-                    <td> 20 </td>
-                    <td> (20+3) >= 2^n => n=5 </td>
-                </tr>
-                <tr>
-                    <td> Personal Administrativo </td>
-                    <td> 102 </td>
-                    <td> 192.168.127.0 </td>
-                    <td> 255.255.255.192  </td>
-                    <td> 192.168.127.1 </td>
-                    <td> 192.168.127.2 </td>
-                    <td> 192.168.127.62 </td>
-                    <td> 30 </td>
-                    <td> (30+3) >= 2^n => n=6 </td>
-                </tr>
-                <tr>
-                    <td> Dep. Inglés </td>
-                    <td> 104 </td>
-                    <td> 192.168.157.0 </td>
-                    <td> 255.255.255.248  </td>
-                    <td> 192.168.157.1 </td>
-                    <td> 192.168.157.2 </td>
-                    <td> 192.168.157.6 </td>
-                    <td> 3 </td>
-                    <td> (3+3) >= 2^n => n=3 </td>
-                </tr>
-                <tr>
-                    <td> Access Point </td>
-                    <td> 103 </td>
-                    <td> 192.168.127.64 </td>
-                    <td> 255.255.255.192  </td>
-                    <td> 192.168.127.65 </td>
-                    <td> 192.168.127.66 </td>
-                    <td> 192.168.127.127 </td>
-                    <td> 31 </td>
-                    <td> (31+3) >= 2^n => n=6 </td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th> ÁREA </th>
+                        <th> VLAN </th>
+                        <th> RED </th>
+                        <th> MÁSCARA </th>
+                        <th> GATEWAY </th>
+                        <th> PRIMERA IP UTILIZABLE </th>
+                        <th> ÚLTIMA IP UTILIZABLE </th>
+                        <th> HOSTS </th>
+                        <th> FÓRMULA </th>
+                    </tr>
+                    <tr>
+                        <td> Dep. Biología G.|Bioquímica </td>
+                        <td> 100 </td>
+                        <td> 192.168.137.0 </td>
+                        <td> 255.255.255.224  </td>
+                        <td> 192.168.137.1 </td>
+                        <td> 192.168.137.2 </td>
+                        <td> 192.168.137.30 </td>
+                        <td> 22|4 </td>
+                        <td> (22+4+3) >= 2^n => n=5 </td>
+                    </tr>
+                    <tr>
+                        <td> Dep. Medicina G. </td>
+                        <td> 101 </td>
+                        <td> 192.168.137.32 </td>
+                        <td> 255.255.255.224  </td>
+                        <td> 192.168.137.33 </td>
+                        <td> 192.168.137.34 </td>
+                        <td> 192.168.137.62 </td>
+                        <td> 20 </td>
+                        <td> (20+3) >= 2^n => n=5 </td>
+                    </tr>
+                    <tr>
+                        <td> Personal Administrativo </td>
+                        <td> 102 </td>
+                        <td> 192.168.127.0 </td>
+                        <td> 255.255.255.192  </td>
+                        <td> 192.168.127.1 </td>
+                        <td> 192.168.127.2 </td>
+                        <td> 192.168.127.62 </td>
+                        <td> 30 </td>
+                        <td> (30+3) >= 2^n => n=6 </td>
+                    </tr>
+                    <tr>
+                        <td> Dep. Inglés </td>
+                        <td> 104 </td>
+                        <td> 192.168.157.0 </td>
+                        <td> 255.255.255.248  </td>
+                        <td> 192.168.157.1 </td>
+                        <td> 192.168.157.2 </td>
+                        <td> 192.168.157.6 </td>
+                        <td> 3 </td>
+                        <td> (3+3) >= 2^n => n=3 </td>
+                    </tr>
+                    <tr>
+                        <td> Access Point </td>
+                        <td> 103 </td>
+                        <td> 192.168.127.64 </td>
+                        <td> 255.255.255.192  </td>
+                        <td> 192.168.127.65 </td>
+                        <td> 192.168.127.66 </td>
+                        <td> 192.168.127.127 </td>
+                        <td> 31 </td>
+                        <td> (31+3) >= 2^n => n=6 </td>
+                    </tr>
+                </table>
+            </div>
 
         </section>
 
@@ -183,6 +187,57 @@
                 <img src="../img/ciencias/PING_100_103_1.png" alt="red-general" can-clicked = "true">
                 <p> <b>img 5.6: </b> Transmisión de paquetes VLAN 100 - 103  </p>
             </div>
+
+            <br>
+            <br>
+
+            <p> <b> Configuración del servidor DNS </b> </p>
+            <p> Archivo <b> /etc/named.conf </b> </p>
+            <div class="image">
+                <img src="../img/ciencias/named_1.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> named.conf - 1  </p>
+            </div>
+            <div class="image">
+                <img src="../img/ciencias/named_2.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> named.conf - 2  </p>
+            </div>
+
+            <p> Archivo <b> /var/named/ciencias.com </b> </p>
+            <div class="image">
+                <img src="../img/ciencias/directa.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> Archivo de resolución directa  </p>
+            </div>
+
+            <p> Archivo <b> /var/named/50.7.194.in-addr </b> </p>
+            <div class="image">
+                <img src="../img/ciencias/directa.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> Archivo de resolución iversa  </p>
+            </div>
+
+            <p> Archivo <b> /etc/hosts </b> </p>
+            <div class="image">
+                <img src="../img/ciencias/hosts.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> hosts </p>
+            </div>
+
+            <p> Test con nslookup </p>
+            <div class="image">
+                <img src="../img/ciencias/dns_test_1.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> nslookup  </p>
+            </div>
+
+            <p> Configuración del DHCP para la VLAN 104 con DNS-Server 194.7.50.2 </p>
+            <div class="image">
+                <img src="../img/ciencias/dhcp_dns.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> dhcp - dns  </p>
+            </div>
+
+            <p> Test desde un host en la red 192.168.157.0/29 </p>
+            <div class="image">
+                <img src="../img/ciencias/VPC_dhcp_dns.png" alt="red-general" can-clicked = "true">
+                <p> <b>img 5.7: </b> test dhcp - dns  </p>
+            </div>
+
         </section>
     </main>
 

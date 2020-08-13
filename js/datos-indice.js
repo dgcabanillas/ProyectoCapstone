@@ -66,7 +66,7 @@ const menuContent = [
             { id: 'l6-2', a: { content: 'Viabilidad de soluciones', link: '#viabilidad' } },
             { id: 'l6-3', a: { content: 'Implementaciones adicionales', link: '#adicional' } },
             { id: 'l6-4', a: { content: 'Ubicación de los servidores', link: '#servidores' } },
-            { id: 'l6-5', a: { content: 'Accesos', link: '#accesos' } },
+            //{ id: 'l6-5', a: { content: 'Accesos', link: '#accesos' } },
             { id: 'l6-6', a: { content: 'Bitácora', link: '#bitacora' } }
         ]
     }
