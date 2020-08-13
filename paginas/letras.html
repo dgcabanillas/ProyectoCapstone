@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link  rel="icon"   href="https://siswebperu.com/wp-content/uploads/2019/09/favicon.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Capstone Proyect</title>
+</head>
+<body>
+    <aside id="menu-indice"> </aside>
+    <div id="img-pop-up" class="hide">
+        <div class="img-container">
+            <img src="../img/ciencias/FC_R1_DHCP.png" alt="">
+        </div>
+        <button onclick={ocultarImg()}> X </button>
+    </div>
+
+
+
+
+    <main>
+        <h1 class="title"> Estructura de red Campus de Letras </h1>
+        <div class="image">
+            <a href="../img/CAMPUS_LETRAS.png">
+                <img src="../img/CAMPUS_LETRAS.png" alt="CAMPUS_LETRAS" >
+            </a>
+            <p> Campus Letras </p>
+        </div>
+
+        <section id="derecho">
+            <h2 class="subtitle"> Facultad de Derecho - Estructura </h2>
+            <div class="image">
+                <a href="../img/DERECHO.png">
+                    <img src="../img/DERECHO.png" alt="DERECHO">
+                </a>
+                <p> Campus Letras - F. Derecho </p>
+            </div>
+            <h2 class="subtitle"> Facultad de Derecho - Servicios </h2>
+            <p> Aqui se pondrán los servicios </p>
+        </section>
+
+        <section id="filologia">
+            <h2 class="subtitle"> Facultad de Filología - Estructura </h2>
+            <div class="image">
+                <a href="../img/FILOLOGIA.png">
+                    <img src="../img/FILOLOGIA.png" alt="FILOLOGIA">
+                </a>
+                <p> Campus Letras - F. Filología </p>
+            </div>
+            <h2 class="subtitle"> Facultad de Filología - Servicios </h2>
+            <p> Aqui se pondrán los servicios </p>
+        </section>
+
+        <section id="servicios-generales">
+            <h2 class="subtitle"> Servicios Generales - Estructura </h2>
+            <div class="image">
+                <a href="../img/SERVICIOS_GENERALES.png">
+                    <img src="../img/SERVICIOS_GENERALES.png" alt="SERV_GENERAL">
+                </a>
+                <p> Campus Letras - Servicios Generales </p>
+            </div>
+        </section>
+        <h2 class="subtitle"> Facultad de Servicios Generales - Servicios </h2>
+        <p> Aqui se pondrán los servicios </p>
+
+        <section id="servicios-informatica">
+            <h2 class="subtitle"> Servicios Informática - Estructura </h2>
+            <div class="image">
+                <a href="../img/SERVICIO_INFORMATICA.png">
+                    <img src="../img/SERVICIO_INFORMATICA.png" alt="INFOR">
+                </a>
+                <p> Campus Letras - Servicios Informática </p>
+            </div>
+            <h2 class="subtitle"> Facultad de Informática - Servicios </h2>
+            <p> Aqui se pondrán los servicios </p>
+
+        </section>
+
+        <h3> Configuración de enrutamiento </h3>
+        <div class="image">
+            <a href="../img/letras/enrutamiento_1.jpeg">
+                <img src="../img/letras/enrutamiento_1.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+        </div>
+        <div class="image">
+            <a href="../img/letras/enrutamiento_2.jpeg">
+                <img src="../img/letras/enrutamiento_2.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+        </div>
+        <div class="image">
+            <a href="../img/letras/enrutamiento_3.jpeg">
+                <img src="../img/letras/enrutamiento_3.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+        </div>
+
+        <h3> Tabla de rutas para el Campus de Letras </h3>
+        <table>
+            <tr>
+                <th>ÁREA</th>
+                <th>RED</th>
+                <th>MÁSCARA</th>
+                <th>GATEWAY</th>
+                <th>PRIMERA IP</th>
+                <th>ÚLTIMA IP</th>
+            </tr>
+            <tr>
+                <td>Facultad de Derecho</td>
+                <td>100.1.1.0</td>
+                <td>255.255.255.192</td>
+                <td>10.6.1.1</td>
+                <td>100.1.1.1</td>
+                <td>100.1.1.62</td>
+            </tr>
+            <tr>
+                <td>Facultad de Filología</td>
+                <td>100.2.1.0</td>
+                <td>255.255.255.192</td>
+                <td>10.6.2.1</td>
+                <td>100.2.1.1</td>
+                <td>100.2.1.62</td>
+            </tr>
+            <tr>
+                <td>Servicios Generales</td>
+                <td>100.3.1.0</td>
+                <td>255.255.255.192</td>
+                <td>10.6.3.1</td>
+                <td>100.3.1.1</td>
+                <td>100.3.1.62</td>
+            </tr>
+            <tr>
+                <td>Servicios Informática</td>
+                <td>100.4.1.0</td>
+                <td>255.255.255.192</td>
+                <td>10.6.4.1</td>
+                <td>100.4.1.1</td>
+                <td>100.4.1.62</td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>	<th> FACULTAD </th>	<th> DEPARTAMENTO/ENTIDAD </th>	<th> IP RANGO </th>	<th> N° NODOS </th>	<th> Prefijo de Mascara </th>	<th> Máscara </th>	<th> #Hosts </th>	<th> Red </th>	<th> Gateway/Router </th>	<th> Primera_Utilizable </th>	<th> Ultima_Utilizable </th>	<th> Broadcast </th>	<th> VLAN </th>	</tr>
+            <tr>	<td> DERECHO </td>	<td> API </td>	<td> 100.1.1.0/24 </td>	<td> 31 </td>	<td> 26 </td>	<td> 255.255.255.192 </td>	<td> 62 </td>	<td> 100.1.1.128 </td>	<td> 100.1.1.129 </td>	<td> 100.1.1.130 </td>	<td> 100.1.1.158 </td>	<td> 100.1.1.191 </td>	<td> 105 </td>	</tr>
+            <tr>	<td> DERECHO </td>	<td> Derecho Penal </td>	<td> 100.1.1.0/24 </td>	<td> 17 </td>	<td> 27 </td>	<td> 255.255.255.224 </td>	<td> 30 </td>	<td> 100.1.1.32 </td>	<td> 100.1.1.33 </td>	<td> 100.1.1.34 </td>	<td> 100.1.1.62 </td>	<td> 100.1.1.63 </td>	<td> 103 </td>	</tr>
+            <tr>	<td> DERECHO </td>	<td> PAS </td>	<td> 100.1.1.0/24 </td>	<td> 12 </td>	<td> 27 </td>	<td> 255.255.255.224 </td>	<td> 30 </td>	<td> 100.1.1.64 </td>	<td> 100.1.1.65 </td>	<td> 100.1.1.66 </td>	<td> 100.1.1.94 </td>	<td> 100.1.1.95 </td>	<td> 104 </td>	</tr>
+            <tr>	<td> DERECHO </td>	<td> Derecho Civil </td>	<td> 100.1.1.0/24 </td>	<td> 10 </td>	<td> 28 </td>	<td> 255.255.255.240 </td>	<td> 14 </td>	<td> 100.1.1.0 </td>	<td> 100.1.1.1 </td>	<td> 100.1.1.2 </td>	<td> 100.1.1.14 </td>	<td> 100.1.1.15 </td>	<td> 101 </td>	</tr>
+            <tr>	<td> DERECHO </td>	<td> Derecho Privado </td>	<td> 100.1.1.0/24 </td>	<td> 8 </td>	<td> 28 </td>	<td> 255.255.255.240 </td>	<td> 14 </td>	<td> 100.1.1.16 </td>	<td> 100.1.1.17 </td>	<td> 100.1.1.18 </td>	<td> 100.1.1.30 </td>	<td> 100.1.1.31 </td>	<td> 102 </td>	</tr>
+            <tr>	<td> FILOLOGÍA </td>	<td> PAS </td>	<td> 100.2.1.0/24 </td>	<td> 12 </td>	<td> 28 </td>	<td> 255.255.255.240 </td>	<td> 14 </td>	<td> 100.2.1.32 </td>	<td> 100.2.1.33 </td>	<td> 100.2.1.34 </td>	<td> 100.2.1.46 </td>	<td> 100.2.1.47 </td>	<td> 204 </td>	</tr>
+            <tr>	<td> FILOLOGÍA </td>	<td> Filología Hispánica </td>	<td> 100.2.1.0/24 </td>	<td> 8 </td>	<td> 28 </td>	<td> 255.255.255.240 </td>	<td> 14 </td>	<td> 100.2.1.0 </td>	<td> 100.2.1.1 </td>	<td> 100.2.1.2 </td>	<td> 100.2.1.14 </td>	<td> 100.2.1.15 </td>	<td> 201 </td>	</tr>
+            <tr>	<td> FILOLOGÍA </td>	<td> Filología Inglesa </td>	<td> 100.2.1.0/24 </td>	<td> 3 </td>	<td> 29 </td>	<td> 255.255.255.248 </td>	<td> 6 </td>	<td> 100.2.1.16 </td>	<td> 100.2.1.17 </td>	<td> 100.2.1.18 </td>	<td> 100.2.1.22 </td>	<td> 100.2.1.23 </td>	<td> 202 </td>	</tr>
+            <tr>	<td> FILOLOGÍA </td>	<td> Literatura </td>	<td> 100.2.1.0/24 </td>	<td> 6 </td>	<td> 29 </td>	<td> 255.255.255.248 </td>	<td> 6 </td>	<td> 100.2.1.24 </td>	<td> 100.2.1.25 </td>	<td> 100.2.1.26 </td>	<td> 100.2.1.30 </td>	<td> 100.2.1.31 </td>	<td> 203 </td>	</tr>
+            <tr>	<td> INFORMÁTICA </td>	<td> Desarrollo y Mantenimiento </td>	<td> 100.3.1.0/24 </td>	<td> 11 </td>	<td> 28 </td>	<td> 255.255.255.240 </td>	<td> 14 </td>	<td> 100.3.1.0 </td>	<td> 100.3.1.1 </td>	<td> 100.3.1.2 </td>	<td> 100.3.1.14 </td>	<td> 100.3.1.15 </td>	<td> 301 </td>	</tr>
+            <tr>	<td> INFORMÁTICA </td>	<td> Sistemas de redes </td>	<td> 100.3.1.0/24 </td>	<td> 11 </td>	<td> 28 </td>	<td> 255.255.255.240 </td>	<td> 14 </td>	<td> 100.3.1.16 </td>	<td> 100.3.1.17 </td>	<td> 100.3.1.18 </td>	<td> 100.3.1.30 </td>	<td> 100.3.1.31 </td>	<td> 302 </td>	</tr>
+            <tr>	<td> INFORMÁTICA </td>	<td> Servidores Corporativos </td>	<td> 100.3.1.0/24 </td>	<td> 5 </td>	<td> 27 </td>	<td> 255.255.255.248 </td>	<td> 6 </td>	<td> 100.3.1.32 </td>	<td> 100.3.1.33 </td>	<td> 100.3.1.34 </td>	<td> 100.3.1.30 </td>	<td> 100.3.1.31 </td>	<td> 303 </td>	</tr>
+            <tr>	<td> GENERALES </td>	<td> Gestión Académica </td>	<td> 100.4.1.0/24 </td>	<td> 36 </td>	<td> 28 </td>	<td> 255.255.255.192 </td>	<td> 62 </td>	<td> 100.4.1.64 </td>	<td> 100.4.1.65 </td>	<td> 100.4.1.66 </td>	<td> 100.4.1.126 </td>	<td> 100.4.1.127 </td>	<td> 404 </td>	</tr>
+            <tr>	<td> GENERALES </td>	<td> Rectorado </td>	<td> 100.4.1.0/24 </td>	<td> 14 </td>	<td> 28 </td>	<td> 255.255.255.240 </td>	<td> 14 </td>	<td> 100.4.1.0 </td>	<td> 100.4.1.1 </td>	<td> 100.4.1.2 </td>	<td> 100.4.1.14 </td>	<td> 100.4.1.15 </td>	<td> 401 </td>	</tr>
+            <tr>	<td> GENERALES </td>	<td> Biblioteca </td>	<td> 100.4.1.0/24 </td>	<td> 4 </td>	<td> 29 </td>	<td> 255.255.255.248 </td>	<td> 6 </td>	<td> 100.4.1.16 </td>	<td> 100.4.1.17 </td>	<td> 100.4.1.18 </td>	<td> 100.4.1.22 </td>	<td> 100.4.1.23 </td>	<td> 402 </td>	</tr>
+            <tr>	<td> GENERALES </td>	<td> Orientación Alumno </td>	<td> 100.4.1.0/24 </td>	<td> 4 </td>	<td> 29 </td>	<td> 255.255.255.248 </td>	<td> 6 </td>	<td> 100.4.1.24 </td>	<td> 100.4.1.25 </td>	<td> 100.4.1.26 </td>	<td> 100.4.1.30 </td>	<td> 100.4.1.31 </td>	<td> 403 </td>	</tr>
+
+        </table>
+
+        <h3> Servicio DHCP </h3>
+        <div class="image">
+            <a href="../img/letras/dhcp_1.jpeg">
+                <img src="../img/letras/dhcp_1.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+            <p> Configuración del servicio DHCP </p>
+        </div>
+        <div class="image">
+            <a href="../img/letras/dhcp_2.jpeg">
+                <img src="../img/letras/dhcp_2.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+            <p> Test del servicio DHCP </p>
+        </div>
+
+        <h3> Servicio SSH </h3>
+        <div class="image">
+            <a href="../img/letras/ssh_1.jpeg">
+                <img src="../img/letras/ssh_1.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+            <p> Test del acceso SSH - parte 1 </p>
+        </div>
+        <div class="image">
+            <a href="../img/letras/ssh_2.jpeg">
+                <img src="../img/letras/ssh_2.jpeg" alt="CAMPUS_LETRAS" >
+            </a>
+            <p> Test del acceso SSH - parte 2 </p>
+        </div>
+    </main>
+
+
+
+
+    <script src="../js/datos-indice.js"></script>
+    <script src="../js/helpers.js"></script>
+    <script>
+        generarMenu( menuContent, '#menu-indice', 'ul');
+        document.getElementById("l1-letras").classList.add('activo');
+    </script>
+</body>
+</html>

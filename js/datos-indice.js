@@ -16,11 +16,24 @@ const menuContent = [
         a: { content: 'UNIVERSIDAD', link: './p2_universidad.html' },
     },
     {
+        id: 'l1-documentacion',
+        class: 'item-facultad',
+        a: { content: 'DOCUMENTACION', link: './Documentacion.html' },
+        ul: [
+            { class: 'lista-departamento'},
+            { id: 'l6-1', a: { content: 'Auditoria de Inventario', link: '#Inventario' } },
+            { id: 'l6-2', a: { content: 'Auditoria de Instalación',  link: '#Instalación' } },
+            { id: 'l6-3', a: { content: 'Auditoria Operacional', link: '#Operacional' } },
+            { id: 'l6-4', a: { content: 'Auditoria de eficiencia', link: '#eficiencia' } },
+            { id: 'l6-5', a: { content: 'Auditoria de Seguridad',  link: '#Seguridad' } }
+        ]
+    },
+    {
         id: 'l1-tecnicas',
         class: 'item-facultad',
-        a: { content: 'CAMPUS TÉCNICAS', link: './p3_tecnicas.html' },
+        a: { content: 'CAMPUS TÉCNICAS', link: './tecnicas.html' },
         ul: [
-            { class: 'lista-departamento' },
+            { class: 'lista-departamento'},
             { id: 'l2-1', a: { content: 'Facultad de Informática', link: '#informatica' } },
             { id: 'l2-2', a: { content: 'Facultad de Ingeniería',  link: '#ingenieria' } },
             { id: 'l2-3', a: { content: 'Facultad de Matemáticas', link: '#matematica' } }
@@ -29,7 +42,7 @@ const menuContent = [
     {
         id: 'l1-letras',
         class: 'item-facultad',
-        a: { content: 'CAMPUS LETRAS', link: './p4_letras.html' },
+        a: { content: 'CAMPUS LETRAS', link: './letras.html' },
         ul: [
             { class: 'lista-departamento' },
             { id: 'l3-1', a: { content: 'Facultad de Derecho',   link: '#derecho' } },
@@ -39,11 +52,11 @@ const menuContent = [
         ]
     },
     {
-        id: 'l1-ciencias',
+        id: 'l1-prueba',
         class: 'item-facultad',
-        a: { content: 'CAMPUS CIENCIAS', link: './p5_ciencias.html' }
+        a: { content: 'CAMPUS CIENCIAS', link: './ciencias.html' }
     },
-    {
+    /*{
         id: 'l1-auditoria',
         class: 'item-facultad',
         a: { content: 'AUDITORÍA', link: './auditoria.html' }
@@ -59,6 +72,20 @@ const menuContent = [
             { id: 'l5-3', a: { content: 'Mini Miguel', link: '#miguel' } },
             { id: 'l5-4', a: { content: 'Olivieri Stefano', link: '#stefano' } },
             { id: 'l5-5', a: { content: 'Vicente Gabriel', link: '#gabriel' } }
+        ]
+    },*/
+    {
+        id: 'l1-memorias',
+        class: 'item-facultad',
+        a: { content: 'MEMORIAS', link: './memorias.html' },
+        ul: [
+            { class: 'lista-departamento' },
+            { id: 'l6-1', a: { content: 'Inconvenientes', link: '#inconvenientes' } },
+            { id: 'l6-2', a: { content: 'Viabilidad de soluciones', link: '#viabilidad' } },
+            { id: 'l6-3', a: { content: 'Implementaciones adicionales', link: '#adicional' } },
+            { id: 'l6-4', a: { content: 'Ubicación de los servidores', link: '#servidores' } },
+            { id: 'l6-5', a: { content: 'Accesos', link: '#accesos' } },
+            { id: 'l6-6', a: { content: 'Bitácora', link: '#bitacora' } }
         ]
     }
 ]

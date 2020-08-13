@@ -10,29 +10,16 @@
 </head>
 <body>
     <aside id="menu-indice"> </aside>
-
+    <div id="img-pop-up" class="hide">
+        <div class="img-container">
+            <img src="../img/ciencias/FC_R1_DHCP.png" alt="">
+        </div>
+        <button onclick={ocultarImg()}> X </button>
+    </div>
 
 
     <main>
         <h1> Auditoria </h1>
-
-        <section>
-            <h3> Auditoria de instalación </h3>
-            <ul>
-                <li> 
-                    Tuvimos problemas al unir distintos proyectos, podriamos hacerlo a traves de un servidor, pero preferimos usar las nubes de gns3, el inconveniente es que cada uno tenía que tener todo el projecto en su computadoras, para ello usamos un controlador de versiones como github. 
-                </li>
-                <li> 
-                    Claramente hay una gran cantidad de rutas, esto trae problemas tales como si se crea más facultades o mas usuarios, podriamos tener que reconfigurar toda la red, para ellos cada facultad cuenta con su propio dhcp. 
-                </li>
-                <li>
-                    Por un motivo de seguridad, y de comodidad, se usaron switch para crear vlan(s), y también para tener un mejor tráfico entre usuarios de una misma facultad, esto también incluye el uso individual de una PAS.
-                </li>
-                <li>
-                    Conectamos los campus por redes wlan, estan pueden estar muy alejadas, sin embargo tuvimos problemas sobre la configuración en GNS3, encontramos una solución por frame relay switching que no se ha implementado en esta entrega.
-                </li>
-            </ul>
-        </section>
 
         <section>
             <h3> Auditoria de inventario: </h3>
@@ -112,6 +99,27 @@
             </table>
         </section>
 
+       
+       
+        <section>
+            <h3> Auditoria de instalación </h3>
+            <ul>
+                <li> 
+                    Tuvimos problemas al unir distintos proyectos, podriamos hacerlo a traves de un servidor, pero preferimos usar las nubes de gns3, el inconveniente es que cada uno tenía que tener todo el projecto en su computadoras, para ello usamos un controlador de versiones como github. 
+                </li>
+                <li> 
+                    Claramente hay una gran cantidad de rutas, esto trae problemas tales como si se crea más facultades o mas usuarios, podriamos tener que reconfigurar toda la red, para ellos cada facultad cuenta con su propio dhcp. 
+                </li>
+                <li>
+                    Por un motivo de seguridad, y de comodidad, se usaron switch para crear vlan(s), y también para tener un mejor tráfico entre usuarios de una misma facultad, esto también incluye el uso individual de una PAS.
+                </li>
+                <li>
+                    Conectamos los campus por redes wlan, estan pueden estar muy alejadas, sin embargo tuvimos problemas sobre la configuración en GNS3, encontramos una solución por frame relay switching que no se ha implementado en esta entrega.
+                </li>
+            </ul>
+        </section>
+
+
         <section>
             <h3> Auditorías Operacional </h3>
             <ul>
@@ -126,16 +134,21 @@
                 <li> Para cada departamento se implementaron VLAN para mayor seguridad y rapidez </li>
             </ul>
         </section>
+        
+        <section>
+            <h3> Auditorías de Eficiencia </h3>
+            <ul>
+                <li> Aqui pondremos la auditoria de eficiencia </li>
+                <li> .............................. </li>
+            </ul>
+        </section>
     </main>
-
-
-    
 
     <script src="../js/datos-indice.js"></script>
     <script src="../js/helpers.js"></script>
     <script>
         generarMenu( menuContent, '#menu-indice', 'ul');
-        document.getElementById("l1-auditoria").classList.add('activo');
+        document.getElementById("l1-documentacion").classList.add('activo');
     </script>
 </body>
 </html>

@@ -27,13 +27,20 @@ body {
 }
 
 body #menu-indice {
-  width: 300px;
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px;
+  direction: rtl;
+  width: 250px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 280px;
+      flex-basis: 280px;
   height: 100%;
   display: block;
   background: var(--color-dark);
   color: var(--color-light);
+  overflow-y: auto;
 }
 
 body #menu-indice .lista-facultades .item-facultad a {
@@ -83,10 +90,17 @@ body #menu-indice .lista-facultades .item-facultad.activo .lista-departamento li
 }
 
 body main {
-  width: 100%;
+  width: auto;
   height: 100%;
-  padding: 20px 60px;
-  overflow: scroll;
+  padding: 10px 20px;
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
 }
 
 body main * {
@@ -153,6 +167,10 @@ body main section {
 body main section li {
   list-style: square inside;
   padding-left: 20px;
+}
+
+body main section .section-container {
+  padding: 10px 20px;
 }
 
 #img-pop-up.hide {

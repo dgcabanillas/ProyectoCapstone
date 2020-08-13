@@ -22,12 +22,16 @@ body {
     height: 100%;
     display: flex;
     #menu-indice {
-        width: 300px;
-        flex-basis: 300px;
+        direction: rtl;
+        width: 250px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 280px;
         height: 100%;
         display: block;
         background: var(--color-dark);
         color: var(--color-light);
+        overflow-y: auto;
         .lista-facultades {
             .item-facultad {
                 a {
@@ -72,10 +76,13 @@ body {
         }
     }
     main {
-        width: 100%;
+        width: auto;
         height: 100%;
-        padding: 20px 60px;
-        overflow: scroll;
+        padding: 10px 20px;
+        overflow-y: auto;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0;
         * {
             margin: 10px auto;
         }
@@ -122,6 +129,9 @@ body {
             li {
                 list-style: square inside;
                 padding-left: 20px;
+            }
+            .section-container {
+                padding: 10px 20px;
             }
         }
     }
