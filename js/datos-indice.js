@@ -16,19 +16,6 @@ const menuContent = [
         a: { content: 'UNIVERSIDAD', link: './p2_universidad.html' },
     },
     {
-        id: 'l1-documentacion',
-        class: 'item-facultad',
-        a: { content: 'DOCUMENTACION', link: './Documentacion.html' },
-        ul: [
-            { class: 'lista-departamento'},
-            { id: 'l6-1', a: { content: 'Auditoria de Inventario', link: '#Inventario' } },
-            { id: 'l6-2', a: { content: 'Auditoria de Instalación',  link: '#Instalación' } },
-            { id: 'l6-3', a: { content: 'Auditoria Operacional', link: '#Operacional' } },
-            { id: 'l6-4', a: { content: 'Auditoria de eficiencia', link: '#eficiencia' } },
-            { id: 'l6-5', a: { content: 'Auditoria de Seguridad',  link: '#Seguridad' } }
-        ]
-    },
-    {
         id: 'l1-tecnicas',
         class: 'item-facultad',
         a: { content: 'CAMPUS TÉCNICAS', link: './tecnicas.html' },
@@ -59,7 +46,15 @@ const menuContent = [
     {
         id: 'l1-auditoria',
         class: 'item-facultad',
-        a: { content: 'AUDITORÍA', link: './auditoria.html' }
+        a: { content: 'AUDITORÍA', link: './auditoria.html' },
+        ul: [
+            { class: 'lista-departamento'},
+            { id: 'l6-1', a: { content: 'Auditoria de Inventario', link: '#inventario' } },
+            { id: 'l6-2', a: { content: 'Auditoria de Instalación',  link: '#instalacion' } },
+            { id: 'l6-3', a: { content: 'Auditoria Operacional', link: '#operacional' } },
+            { id: 'l6-4', a: { content: 'Auditoria de eficiencia', link: '#eficiencia' } },
+            { id: 'l6-5', a: { content: 'Auditoria de Seguridad',  link: '#seguridad' } }
+        ]
     },
     {
         id: 'l1-memorias',

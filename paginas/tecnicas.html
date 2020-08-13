@@ -16,12 +16,12 @@
         </div>
         <button onclick={ocultarImg()}> X </button>
     </div>
-    
+
 
     <main>
         <h3> Análisis de requisitos </h3>
         <p> 
-            En base al cuadro que se muestra, se ha implementado un diseño de red que se explicará con mayor detalle en el siguiente punto. 
+            Se muestran los requerimientos fisicos que necesita el campus.
         </p>
         <table>
             <tr>	<th>FACULTAD</th>	<th>DEPARTAMENTO/ENTIDAD</th>	<th>NºSwittch</th>	<th>N° NODOS</th>	<th>Nº Servidores</th>	<th>#Hosts</th>	</tr>
@@ -44,6 +44,9 @@
         </table>
 
         <h3 class="title"> Estructura de red Campus Técnicas</h3>
+        <p>
+            Se tienen 4 facultades, las cuales poseen un router principal, con diferentes switches conectados a él, cada switch interconecta los host de cada departamento por medio de vlans, esto con la finalidad de reducir la latencia y la carga de tráfico de la red y de los dispositivos.  Los Departamentos no poseen interconexión ya que pertenecen a diferentes subredes
+        </p>
         <div class="image">
 	    <a href="../img/tecnicas/red_general.png">	    
             <img src="../img/tecnicas/red_general.png" alt="TECNICAS">
@@ -58,8 +61,6 @@
 	        </a>
                 <p> Campus Técnicas - F. Informática </p>
             </div>
-            <h2 class="subtitle"> Facultad de Informática - Servicios </h2>
-            <p> Aqui se pondrán los servicios </p>
         </section>
         <section id="ingenieria">
             <h2 class="subtitle"> Facultad de Ingeniería - Estructura </h2>
@@ -69,8 +70,6 @@
 	        </a>
                 <p> Campus Técnicas - F. Ingeniería </p>
             </div>
-            <h2 class="subtitle"> Facultad de Ingeniería - Servicios </h2>
-            <p> Aqui se pondrán los servicios </p>
         </section>
         <section id="matematica">
             <h2 class="subtitle"> Facultad de Matemática - Estructura </h2>
@@ -80,8 +79,6 @@
 	        </a>
                 <p> Campus Técnicas - F. Matemática </p>
             </div>
-            <h2 class="subtitle"> Facultad de Matemática - Servicios </h2>
-            <p> Aqui se pondrán los servicios </p>
         </section>
 
         <h3> Implementación </h3>
@@ -345,6 +342,12 @@
                 <td>104</td>
             </tr>
         </table>
+
+        <br>
+
+        <p>
+            Se muestra a continuación,  la configuracion de VLANS, la asignacion DHCP y los encaminamientos entre redes:
+        </p>
 
         <div class="image">
             <img src="../img/tecnicas/ss1.png" alt="TECNICAS">
