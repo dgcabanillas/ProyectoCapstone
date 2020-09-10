@@ -32,10 +32,12 @@ const menuContent = [
         a: { content: 'CAMPUS LETRAS', link: './letras.html' },
         ul: [
             { class: 'lista-departamento' },
-            { id: 'l3-1', a: { content: 'Facultad de Derecho',   link: '#derecho' } },
-            { id: 'l3-2', a: { content: 'Facultad de Filología', link: '#filologia' } },
-            { id: 'l3-3', a: { content: 'Servicios Generales',   link: '#servicios-generales' } },
-            { id: 'l3-4', a: { content: 'Servicio Informática',  link: '#servicios-informatica' } }
+            { id: 'l3-1', a: { content: 'Servicio Informática',  link: '#servicios-informatica' } },
+            { id: 'l3-1-1', a: { content: 'Firewall Externo',  link: '#fw-externo' } },
+            { id: 'l3-1-2', a: { content: 'Firewall Interno',  link: '#fw-interno' } },
+            { id: 'l3-2', a: { content: 'Servicios Generales',   link: '#servicios-generales' } },
+            { id: 'l3-3', a: { content: 'Facultad de Derecho',   link: '#derecho' } },
+            { id: 'l3-4', a: { content: 'Facultad de Filología', link: '#filologia' } },
         ]
     },
     {
